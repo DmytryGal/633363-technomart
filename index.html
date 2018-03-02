@@ -5,8 +5,52 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+      <header class="main-header">
+        <nav class="main-navigation">
+          <a class="main-header-logo">
+            <img src=..img/index-logo.svg alt="Логотип интернет-магазина &qouteТехномарт&quote">
+          </a>
+          <ul class="site-navigation">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="info.html">Компания</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="specialoffers.html">Спецпредложения</a></li>
+              <li><a href="delivery.html">Доставка</a></li>
+              <li><a href="contacs.html">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li><a href="login-link.html">Вход</a></li>
+            <li><a href="user-registration.html">Регистрация</a></li>
+        <!-- сюда вставить для авторизованной страницы-->
+            <li>
+              <ul class="usernav-int">
+              <li class="Search">Поиск</li>
+              <li><a href="bookmarks.html">Закладки</a></li>
+              <li><a href="basket.html">Корзина</a></li>
+              <li class="checkout"><a href="buy.html">Оформить заказ</a></li>
+            </ul>
+          </li>
+          </ul>
+        </nav>
+        <i><em>Интернет-магазин строительных материалов и инструументов для ремонта</em></i>
+        <p>+7(812)5550555</p>
+        <p>г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8</p>
+      </header>
+  <main class="container">
+    <!--<h1 class="visually-hidden">Интернет-магазин Техномарт</h1>-->
+    <section class="service-catalog">
+      <h2 class="materials">Материалы</h2>
+        <p class="materials-btnturn"><a href="catalog/materials.html">На любой вкус</a></p>
+      <h2 class="instruments">Инструменты</h2>
+        <p class="instruments-btnturn"><a href="catalog/instruments.html">На все случаи</a></p>
+      <h2 class="equipment">Техника</h2>
+          <p class="equip-btnturn"><a href="catalog/equipment.html">Для стройки</a></p>
+        <h2 class="sales">Скидки 50%</h2>
+          <p class="sales-btnturn">На 350 товаров<a href="sales.html"></a></p>
+      <h2 class="deleve">Доставка</h2>
+          <p class="delev-btnturn"><a href="delivery.html">Бесплатно</a></p>
+    </section>
+</main>
   </body>
 </html>
