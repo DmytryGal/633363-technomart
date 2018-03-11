@@ -27,7 +27,13 @@
             <li><a href="user-registration.html">Регистрация</a></li>
           </ul>
               <ul class="usernav-int">
-              <li class="Search">Поиск</li>
+              <li class="Search">
+                <h2 class="visually-hidden">Поиск</h2>
+                  <form class="search-product" method="get">
+                  <input type="text" name="search" id="search-product"
+                  placeholder="Поиск" value>
+                </form>
+              </li>
               <li><a href="bookmarks.html">Закладки</a></li>
               <li><a href="cart.html">Корзина</a></li>
               <li class="checkout"><a href="buy.html">Оформить заказ</a></li>
@@ -38,7 +44,7 @@
         <p class="address">г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8</p>
       </header>
   <main class="container">
-    <!--<h1 class="visually-hidden">Интернет-магазин Техномарт</h1>-->
+  <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
     <section class="service-catalog">
 <div class="service-item">
       <h3 class="materials">Материалы</h3>
@@ -61,6 +67,7 @@
       <h3 class="deleve">Доставка</h3>
           <a href="delivery.html">Бесплатно</a>
         </div>
+      </section>
             <section class="slider">
             <div class="slide-catalog">
                <h3 class="slaider-name">Перфораторы</h3>
@@ -82,26 +89,26 @@
       <a href="catalog/popular-product.html">Все популярные товары</a>
         <ul class="product-item-img">
           <li class="item-price">
-        <img src="img/perf9000.png" width="221" height="150" alt="Перфоратор Bosh BFG 9000">
-        <h3 class="range">Перфоратор Bosh BFG 9000</h3>
+        <img src="img/perf9000.png" width="221" height="150" alt="Перфоратор Bosch BFG 9000">
+        <h3 class="range">Перфоратор Bosch BFG 9000</h3>
         <p class="price-old">32500</p>
           <p class="price-new">25500</p>
         </li>
         <li class="item-price">
           <img src="img/perf3000.png" width="221" height="150" alt="Перфоратор Bosh BFG 3000">
-          <h3 class="range">Перфоратор Bosh BFG 3000</h3>
+          <h3 class="range">Перфоратор Bosch BFG 3000</h3>
           <p class="price-old">22500</p>
             <p class="price-new">15500</p>
           </li>
           <li class="item-price">
-            <img src="img/perf6000.png" width="221" height="150" alt="Перфоратор Bosh BFG 6000">
-            <h3 class="range">Перфоратор Bosh BFG 6000</h3>
+            <img src="img/perf6000.png" width="221" height="150" alt="Перфоратор Bosch BFG 6000">
+            <h3 class="range">Перфоратор Bosch BFG 6000</h3>
             <p class="price-old">30500</p>
               <p class="price-new">25500</p>
             </li>
             <li class="item-price">
-              <img src="img/perf2000.png" width="221" height="150" alt="Перфоратор Bosh BFG 2000">
-              <h3 class="range">Перфоратор Bosh BFG 2000</h3>
+              <img src="img/perf2000.png" width="221" height="150" alt="Перфоратор Bosch BFG 2000">
+              <h3 class="range">Перфоратор Bosch BFG 2000</h3>
               <img src="img/newflag.png" width="60" height="59" alt="Новинка">
                 <p class="price-new">12500</p>
               </li>
@@ -111,28 +118,28 @@
       <h2 class="popular">Популярные производители:</h2>
       <a href="tehnomart-catalog.html">Все  производители</a>
       <div class="brand-logo">
-        <a href="catalog.html"><img src="img/bosch.png" width="121" height="37" alt="Bosh"></a>
+        <a href="catalog.html"><img src="img/bosch.png" width="121" height="37" alt="Bosch"></a>
         <a href="catalog.html"><img src="img/Makita.png" width="123" height="40" alt="Makita"></a>
-        <a href="catalog.html"><img src="img/DeWALT.png" width="146" height="44" alt="DeWault"></a>
+        <a href="catalog.html"><img src="img/DeWALT.png" width="146" height="44" alt="DeWalt"></a>
         <a href="catalog.html"><img src="img/Interscol.png" width="184" height="32" alt="Interscol"></a>
         <a href="catalog.html"><img src="img/Hitachi.png" width="169" height="31" alt="Hitachi"></a>
         <a href="catalog.html"><img src="img/LG.png" width="121" height="73" alt="LG"></a>
         <a href="catalog.html"><img src="img/AEG.png" width="151" height="96" alt="AEG"></a>
-        <a href="catalog.html"><img src="img/Metabo.png" width="204" height="69" alt="metabo"></a>
+        <a href="catalog.html"><img src="img/Metabo.png" width="204" height="69" alt="Metabo"></a>
         </div>
       </section>
       <section class="service">
         <h2 class="svc">СЕРВИСЫ</h2>
         <p class="expos">Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать Ваши покупки приятными.</p>
-        <div class="service-list"><span class="button-service">Доставка</span>
+        <div class="service-list"><span class="button-service" tabindex="0">Доставка</span>
           <h3 class="list">Доставка</h3>
           <p class="expos">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
             Ведь мы неплохо заработаем,<br>
             поднимая его на ваш этаж!</p>
-            <img src="img/delevery.png" width="468" height="261" alt="Мы мчим к вам с заказом">
+            <img src="img/delevery.png" width="468" height="261" alt="Доставка">
           </div>
-            <div class="service-list"> <span class="button-service">Гарантия</span>
+            <div class="service-list"> <span class="button-service" tabindex="0">Гарантия</span>
               <h3 class="list">Гарантия</h3>
               <p class="expos">Гарантия  Если купленный у нас товар поломается или заискрит,
                 а также в случае пожара, спровоцированного его возгаранием,вы всегда можете буть уверенными в нашей гарантии.
@@ -140,11 +147,11 @@
                 <img src="img/garant.png" width="389" height="283" alt="100% гарантия">
               </div>
               <div class="service-list">
-                 <span class="button-service">Кредит</span>
+                 <span class="button-service" tabindex="0">Кредит</span>
                 <h3 class="list">Кредит</h3>
                 <p class="expos">Залезть в долговую яму стало проще.
                 Кредитные консультанты придут вам на помощь.</p>
-                <span class="credit-btn"><a href="#">Оформить заявку</a></span>
+                <a href="#">Оформить заявку</a>
                   <img src="img/credit.png" width="465" height="285" alt="Кредит">
                 </div>
           </section>
@@ -165,9 +172,11 @@
             <section class="modal modal-map">
               <h2 class="svc">Контакты</h2>
               <p class="expos">Вы можете забрать товар сами забрав его у нас в офисе</p>
-              <a href="htpps://yandex-map.ru"><img src="img/map.png" alt="Мы тут"></a>
+              <a href="htpps://yandex-map.ru"><img src="img/map.png"
+                alt="Офис компании по адресу ул. Большая Конюшенная 19/8,
+                Санкт-Петербург"></a>
               <p class="btn-form"><a href="#">Заблудились?Напишите нам!</a></p>
-              <form class="feedback" action="htpps://@htmlacademy.ru" method="post">
+              <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
                 <label for="user-field">Ваше имя</label>
                 <input type="text" name="user-name" value="Представтесь пожалуйста" id="user-field">
                 <label for="email-field">Ваш e-mail</label>
@@ -175,7 +184,7 @@
                 <label for="appeal-field">Текст письма</label>
                 <textarea name="appeal" id="appeal-field" rows="10">В свободной форме</textarea>
                 <input type="submit" value="отправить">
-              <span class="model-close">x</span>
+              <button class="model-close">Закрыть</button>
             </form>
             </section>
           </main>
@@ -203,7 +212,7 @@
           </div>
 <p class="footer-copiright">&copy;2010-2017Компания &laquo;Техномарт&raquo;Все правазащищены</p>
 <div class="footer-social">
-  <ul>
+  <ul class="social-networks">
     <li><a class="social-button" href="#">Вконтакте</a></li>
          <li><a class="social-button" href="#">Фейсбук</a></li>
          <li><a class="social-button" href="#">Инстаграм</a></li>

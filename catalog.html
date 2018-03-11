@@ -27,7 +27,12 @@
           <li><a href="user-registration.html">Регистрация</a></li>
         </ul>
             <ul class="usernav-int">
-            <li class="Search">Поиск</li>
+              <li class="Search">
+                <h2 class="visually-hidden">Поиск</h2>
+                  <form class="search-product" method="get">
+                  <input type="text" name="search" id="search-product"
+                  placeholder="Поиск" value>
+                </form>
             <li><a href="bookmarks.html">Закладки</a></li>
             <li><a href="cart.html">Корзина</a></li>
             <li class="checkout"><a href="buy.html">Оформить заказ</a></li>
@@ -40,23 +45,70 @@
       <main class="container-catalog">
         <h1 class="page-title">Перфораторы</h1>
         <ul class="breadcrumbs">
-          <li class="breadcrumbs-item"><a href ="index.html"><src="img/icon-home.svg"></a></li>
+          <li class="breadcrumbs-item"><a href ="index.html">
+            <img src="img/icon-home.svg" alt="Переход на главную страницу"></a></li>
           <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
           <li class="breadcrumbs-item"><a href="instruments.html">Инструменты</a></li>
           <li class="breadcrumbs-current"><a>Перфораторы</a></li>
         </ul>
         <section class="filters">
           <h2 class="filters-item">Фильтр:</h2>
-          <!--Здесь будет форма-->
+      <form class="filters-item-pick" method="get" action="echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Цена:</legend>
+          <input type="range" min="0" max="30000" step="500" value>
+      <!--Оформить бегунок-->
+    </fieldset>
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="bosch" id="filters-bosch" checked>
+              <label for="filters-bosch">Bosch</label>
+            </li>
+            <li>
+              <input type="checkbox" name="interscol" id="filters-intersol">
+              <label for="filters-intersol">Интерскол</label>
+            </li>
+            <li>
+              <input type="checkbox" name="makita" id="filters-makita" checked>
+              <label for="filters-makita">Makita</label>
+            </li>
+            <li>
+              <input type="checkbox" name="dewalt"  id="filters-dewalt">
+              <label for="filters-dewalt">DEWALT</label>
+            </li>
+            <li>
+              <input type="checkbox" name="hitachi" id="filters-hitachi">
+              <label for="filters-hitachi">HITACHI</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="typesupply" id="filters-battery">
+              <label for="filters-battery">Аккумуляторные</label>
+            </li>
+            <li>
+              <input type="radio" name="typesupply" id="filters-circuit">
+              <label for="filters-circuit">Сетевые</label>
+            </li>
+          </ul>
+        </fieldset>
+          <button type="submit">Показать</button>
+        </form>
         </section>
         <section class="sorting">
           <h2 class="filters-item">Сортировка</h2>
           <ul class="sorting-item">
-            <li href=#>По цене</li>
-            <li href=#>По типу</li>
-            <li href=#>По функционалу</li>
+            <li><a href=#>По цене</a></li>
+            <li><a href=#>По тип</a></li>
+            <li><a href=#>По функционалу</a></li>
           </ul>
-          <!--кнопки вверх вниз-->
+          <button class="button-sorting-up" type="button" aria-label="По возрастанию"></button>
+            <button class="button-sorting-up" type="button" aria-label="По убыванию"></button>
         </section>
         <section class="product-item">
           <h2  class="visually-hidden">Перфораторы</h2>
