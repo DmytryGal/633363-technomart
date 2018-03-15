@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|PT+Sans:400,700&amp;subset=cyrillic"
+    rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
@@ -34,8 +37,8 @@
                   placeholder="Поиск" value>
                 </form>
               </li>
-              <li><a href="bookmarks.html">Закладки</a></li>
-              <li><a href="cart.html">Корзина</a></li>
+              <li class="bookmark-cart"><a href="bookmarks.html">Закладки</a></li>
+              <li class="bookmark-cart"><a href="cart.html">Корзина</a></li>
               <li class="checkout"><a href="buy.html">Оформить заказ</a></li>
             </ul>
           </section>
@@ -46,17 +49,17 @@
   <main class="container">
   <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
     <section class="service-catalog">
-<div class="service-item">
-      <h3 class="materials">Материалы</h3>
+<div class="service-item materials">
+      <h3>Материалы</h3>
     <a href="catalog/materials.html">На любой вкус</a>
   </div>
-    <div class="service-item">
-       <h3 class="instruments">Инструменты</h3>
+    <div class="service-item instruments">
+       <h3>Инструменты</h3>
       <a href="catalog/instruments.html">На все случаи</a>
       <img src="img/newflag.png" width="60" height="59" alt="Новинка">
     </div>
-    <div class="service-item">
-      <h3 class="equipment">Техника</h3>
+    <div class="service-item equipment ">
+      <h3>Техника</h3>
         <a href="catalog/equipment.html">Для стройки</a>
       </div>
       <div class="service-item">
@@ -130,7 +133,7 @@
       </section>
       <section class="service">
         <h2 class="svc">СЕРВИСЫ</h2>
-        <p class="expos">Хороший интернет-магазин отличается от плохого не только ценами!<br>
+        <p class="ad">Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать Ваши покупки приятными.</p>
         <div class="service-list"><span class="button-service" tabindex="0">Доставка</span>
           <h3 class="list">Доставка</h3>
@@ -167,7 +170,7 @@
                 <li>Автотрейдинг</li>
                 <li>ЖелДорЭкспедиция</li>
               </ul>
-              ><a href="info.html">Подробнее о компании</a>
+              <a href="info.html">Подробнее о компании</a>
             </section>
             <section class="modal modal-map">
               <h2 class="svc">Контакты</h2>
@@ -177,6 +180,7 @@
                 Санкт-Петербург"></a>
               <p class="btn-form"><a href="#">Заблудились?Напишите нам!</a></p>
               <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+                <fieldset>
                 <label for="user-field">Ваше имя</label>
                 <input type="text" name="user-name" value="Представтесь пожалуйста" id="user-field">
                 <label for="email-field">Ваш e-mail</label>
@@ -185,6 +189,7 @@
                 <textarea name="appeal" id="appeal-field" rows="10">В свободной форме</textarea>
                 <input type="submit" value="отправить">
               <button class="model-close">Закрыть</button>
+            </fieldset>
             </form>
             </section>
           </main>
@@ -194,28 +199,28 @@
         <p class="footer-contacts">г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8
         <a href="tel:+7(812)5550555">+7(812)5550555</a></p>
           <div class="footer-main-nav">
-            <ul>
-              <li><a href="info.html">Компания</a></li>
-              <li><a href="news.html">Новости</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
-              <li><a href="delivery.html">Доставка</a></li>
-              <li><a href="contacs.html">Контакты</a></li>
+            <ul class="footer-item-nav">
+              <li class="foot-list-nav"><a href="info.html">Компания</a></li>
+              <li class="foot-list-nav"><a href="news.html">Новости</a></li>
+              <li class="foot-list-nav"><a href="catalog.html">Каталог</a></li>
+              <li class="foot-list-nav"><a href="delivery.html">Доставка</a></li>
+              <li class="foot-list-nav"><a href="contacs.html">Контакты</a></li>
             </ul>
           </div>
           <div class="footer-servis">
-            <ul>
-              <li><a href="catalog/materials.html">Материалы</a></li>
-              <li><a href="catalog/equipment.html">Техника</a></li>
-              <li><a href="catalog/instruments.html">Инструменты</a></li>
-              <li><a href="specialoffers.html">Спецпредложения</a></li>
+            <ul class="footer-item-service">
+              <li class="foot-list-service"><a href="catalog/materials.html">Материалы</a></li>
+              <li class="foot-list-service"><a href="catalog/equipment.html">Техника</a></li>
+              <li class="foot-list-service"><a href="catalog/instruments.html">Инструменты</a></li>
+              <li class="foot-list-service"><a href="specialoffers.html">Спецпредложения</a></li>
             </ul>
           </div>
 <p class="footer-copiright">&copy;2010-2017Компания &laquo;Техномарт&raquo;Все правазащищены</p>
 <div class="footer-social">
   <ul class="social-networks">
-    <li><a class="social-button" href="#">Вконтакте</a></li>
-         <li><a class="social-button" href="#">Фейсбук</a></li>
-         <li><a class="social-button" href="#">Инстаграм</a></li>
+    <li class="social-button"><a href="#">Вконтакте</a></li>
+         <li class="social-button"><a href="#">Фейсбук</a></li>
+         <li class="social-button"><a href="#">Инстаграм</a></li>
   </ul>
   </div>
   <p class="footer-info">Обратная связь:</p>
