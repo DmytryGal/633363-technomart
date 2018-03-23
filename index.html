@@ -11,7 +11,7 @@
   <body>
       <header class="main-header">
         <div class="top-panel">
-<div class="top-panel-conteiner">
+          <div class="top-panel-conteiner">
   <div class="logotype">
     <a class="main-header-logotype">Техномарт</a>
         </div>
@@ -30,7 +30,27 @@
         </ul>
       </div>
     </div>
+  </div>
+      <div class="user-information">
+        <div class="call">
+          <div class="market">
+            <p><em>Интернет-магазин<br>
+              строительных материалов<br>
+              и инструментов для ремонта</em></p>
+          </div>
+        <div class="calling"><a class="phone" href="tel:+7(812)5550555">+7(812)555-05-55</a>
+        <p class="address">г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8</p>
       </div>
+      </div>
+      <section class="user-navigation">
+        <h2 class="visually-hidden">Авторизация</h2>
+        <ul class="link-registration">
+          <li class="link-item"><a href="login-link.html">Вход</a></li>
+          <li class="link-item"><a href="user-registration.html">Регистрация</a></li>
+        </ul>
+        </section>
+</div>
+
           <nav>
           <ul class="site-navigation">
               <li class="main-navigation"><a>Главная</a></li>
@@ -42,20 +62,12 @@
               <li class="main-navigation"><a href="contacs.html">Контакты</a></li>
         </ul>
         </nav>
-        <section class="user-navigation">
-          <h2 class="visually-hidden">Авторизация</h2>
-          <ul class="link-registration">
-            <li class="link-item"><a href="login-link.html">Вход</a></li>
-            <li class="link-item"><a href="user-registration.html">Регистрация</a></li>
-          </ul>
-          </section>
-      <div class="call"> <p><em>Интернет-магазин строительных материалов и инструментов для ремонта</em></p>
-        <a class="phone" href="tel:+7(812)5550555">+7(812)555-05-55</a>
-        <p class="address">г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8</p></div>
+
       </header>
   <main class="container">
   <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
     <section class="service-catalog">
+      <div class="service-flex">
 <div class="service-item materials">
       <h3 class="turn">Материалы</h3>
     <a href="catalog/materials.html">На любой вкус</a>
@@ -63,7 +75,7 @@
     <div class="service-item instruments">
        <h3 class="turn">Инструменты</h3>
       <a href="catalog/instruments.html">На все случаи</a>
-      <img src="img/newflag.png" width="60" height="59" alt="Новинка">
+      <img class="newflag" src="img/newflag.png" width="60" height="59" alt="Новинка">
     </div>
     <div class="service-item equipment ">
       <h3 class="turn">Техника</h3>
@@ -77,8 +89,6 @@
       <h3 class="turn">Доставка</h3>
           <a href="delivery.html">Бесплатно</a>
         </div>
-      </section>
-            <section class="slider">
             <div class="slide-catalog">
               <div class="title-slide">
                 <h3 class="slaider-name">Перфораторы</h3>
@@ -87,7 +97,7 @@
               <img src="img/slider1.jpg" width="620" height="266" alt="Перфораторы">
               <a href="catalog.html">Открыть каталог</a>
             </div>
-            <div class="slide-catalog">
+            <div class="slide-catalog slide2">
               <div class="title-slide">
       <h3 class="slaider-name">Дрели</h3>
           <p class="slider-comment">Соседям на радость!</p>
@@ -97,10 +107,13 @@
           <button>&#10095;</button>
           <button>&#10094;</button>
         </div>
+      </div>
         </section>
     <section class="popular-product">
+      <header class="popular-item" >
       <h2 class="popular">Популярные товары:</h2>
       <a href="catalog/popular-product.html">Все популярные товары</a>
+    </header>
         <ul class="product-item-img">
           <li class="item-price">
         <img src="img/perf9000.png" width="221" height="150" alt="Перфоратор Bosch BFG 9000">
@@ -123,14 +136,16 @@
             <li class="item-price">
               <img src="img/perf2000.png" width="221" height="150" alt="Перфоратор Bosch BFG 2000">
               <h3 class="range">Перфоратор Bosch BFG 2000</h3>
-              <img src="img/newflag.png" width="60" height="59" alt="Новинка">
+              <img class="newflag" src="img/newflag.png" width="60" height="59" alt="Новинка">
                 <p class="price-new">12500</p>
               </li>
             </ul>
     </section>
     <section class="popular-brand">
+        <header class="popular-item" >
       <h2 class="popular">Популярные производители:</h2>
       <a class="all-brand" href="tehnomart-catalog.html">Все  производители</a>
+    </header>
       <div class="brand-logo">
         <div class="brand"><a href="catalog.html"><img src="img/bosch.png" width="121" height="37" alt="Bosch"></a></div>
       <div class="brand"><a href="catalog.html"><img src="img/Makita.png" width="123" height="40" alt="Makita"></a></div>
@@ -143,9 +158,12 @@
         </div>
       </section>
       <section class="service">
+        <header class="service-header">
         <h2 class="svc">Сервисы</h2>
         <p class="ad">Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать Ваши покупки приятными.</p>
+        </header>
+        <div class="service-discription">
         <div class="service-list"><span class="button-service" tabindex="0">Доставка</span>
           <h3 class="list">Доставка</h3>
           <p class="expos">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
@@ -168,13 +186,15 @@
                 <a class="credit-orders" href="#">Оформить заявку</a>
                   <img src="img/credit.png" width="465" height="285" alt="Кредит">
                 </div>
+              </div>
           </section>
           <section class="about">
+            <div class="company">
             <h2 class="about-me">Компания &laquo;Техномарт&raquo;</h2>
             <p class="expos">Настоящий мужской шоппинг начинается здесь! Огромный выбор
               товара для ремонта и строительства не оставит равнодушным любителей
-               сэкономить на гастарбайтерах.<br>
-              Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+               сэкономить на гастарбайтерах.</p>
+          <p class="expos">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
               Техномарт работает со многими транспортными компаниями:</p>
               <ul class="option">
                 <li class="delevery-list">Деловые линии</li>
@@ -182,41 +202,26 @@
                 <li class="delevery-list">ЖелДорЭкспедиция</li>
               </ul>
               <a href="info.html">Подробнее о компании</a>
-            </section>
-            <section class="modal modal-map">
-              <h2 class="svc">Контакты</h2>
-              <p class="expos">Вы можете забрать товар сами забрав его у нас в офисе</p>
+            </div>
+            <div class="company-contact">
+              <h2 class="about-me">Контакты</h2>
+              <p class="expos">Вы можете забрать товар сами,<br>
+                заехав в наш офис:</p>
               <a href="htpps://yandex-map.ru"><img src="img/map.png"
                 alt="Офис компании по адресу ул. Большая Конюшенная 19/8,
                 Санкт-Петербург"></a>
             <a href="#">Заблудились?Напишите нам!</a>
-              <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
-                <fieldset>
-                <div class="dataname">
-                  <label for="user-field">Ваше имя</label><br>
-                <input type="text" name="user-name" placeholder="Представьтесь пожалуйста" id="user-field">
-              </div>
-              <div class="datamail">
-                <label for="email-field">Ваш e-mail</label><br>
-                <input type="text" name="user-email" placeholder="Для отправки ответа" id="email-field">
-                <label for="appeal-field">Текст письма</label>
-              </div>
-              <div class="mail">
-                <textarea name="appeal" id="appeal-field" rows="10">В свободной форме</textarea>
-              </div>
-                <div class="btn-feedback">
-                <input type="submit" value="отправить">
-              </div>
-              <button class="model-close" type="button"><img src="img/form-2.svg" alt="Закрыть"></button>
-            </fieldset>
-            </form>
-            </section>
+          </div>
+          </section>
           </main>
       <footer class="main-footer">
-      <a class="main-header-logotype" href="index.html">Техномарт</a>
+        <div class="footer-top">
+          <div class="foot-logo">
+            <a class="main-header-logotype" href="index.html">Техномарт</a>
         <p class="footer-contacts">г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8
         <a href="tel:+7(812)5550555">+7(812)5550555</a></p>
-          <div class="footer-main-nav">
+      </div>
+      <div class="foot-list">
             <ul class="footer-item-nav">
               <li class="foot-list-nav"><a href="info.html">Компания</a></li>
               <li class="foot-list-nav"><a href="news.html">Новости</a></li>
@@ -224,8 +229,6 @@
               <li class="foot-list-nav"><a href="delivery.html">Доставка</a></li>
               <li class="foot-list-nav"><a href="contacs.html">Контакты</a></li>
             </ul>
-          </div>
-          <div class="footer-servis">
             <ul class="footer-item-service">
               <li class="foot-list-service"><a href="catalog/materials.html">Материалы</a></li>
               <li class="foot-list-service"><a href="catalog/equipment.html">Техника</a></li>
@@ -233,6 +236,7 @@
               <li class="foot-list-service"><a href="specialoffers.html">Спецпредложения</a></li>
             </ul>
           </div>
+        </div>
           <section class="footer-down">
             <h2 class="visually-hidden">Информационная панель</h2>
 <p class="footer-copiright">&copy;2010-2017Компания &laquo;Техномарт&raquo;Все права защищены</p>
@@ -251,5 +255,25 @@
     </div>
   </section>
       </footer>
+      <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+        <div class="dataname">
+          <label for="user-field">Ваше имя</label><br>
+        <input type="text" name="user-name" placeholder="Представьтесь пожалуйста" id="user-field">
+      </div>
+      <div class="datamail">
+        <label for="email-field">Ваш e-mail</label><br>
+        <input type="text" name="user-email" placeholder="Для отправки ответа" id="email-field">
+        <label for="appeal-field">Текст письма</label>
+      </div>
+      <div class="mail">
+        <textarea name="appeal" id="appeal-field" rows="10">В свободной форме</textarea>
+      </div>
+        <div class="btn-feedback">
+        <input type="submit" value="отправить">
+      </div>
+      <button class="model-close" type="button"><img src="img/form-2.svg" alt="Закрыть"></button>
+    </fieldset>
+    </form>
   </body>
 </html>
