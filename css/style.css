@@ -1,13 +1,13 @@
 html{margin: 0;
 padding: 0;
 min-width: 1210px;
-min-height: 3151px;
+min-height: 2200px;
 }
 body {
 margin:0;
 padding:0;
 min-width: 1210px;
-min-height: 3151px;
+min-height: 2200px;
 font-family:"Cuprum", Arial, sans-serif;
 font-size:14px;
 line-height:18px;
@@ -89,6 +89,7 @@ background-color:#ba2732;
 .link-registration,
 .usernav-int,
 .product-item-img,
+.product-catalog-img,
 .option,
 .footer-item-nav,
 .footer-item-service,
@@ -303,6 +304,11 @@ line-height:35px;
 background-color:#f2f6f8;
 color:#32425c;
 text-transform:uppercase;
+margin-left: 130px;
+padding-left: 30px;
+padding-top: 34px;
+padding-bottom: 34px;
+margin-bottom: 20px;
 }
 li.item-price{
 font-family:"PT Sans", Arial, sans-serif;
@@ -429,7 +435,7 @@ p.footer-contacts{
   color:#ffffff;
 
 }
-.footer-down{
+.footer-bottom{
   background-color: #293449;
 }
 .footer-network{
@@ -582,7 +588,7 @@ fieldset{
   line-height: 20px;
   text-transform: uppercase;
 }
-.sorting{
+.sorting-head{
   background-color: #f7f3ec;
 }
 .sorting a{
@@ -600,35 +606,48 @@ fieldset{
   color:#f0515c;
   border:none;
 }
-.pagination-item a{
-  font-size: 13px;
-  line-height: 18px;
-  color: #acaaa5;
-  border: solid 1px;
-  border-radius: 2px;
-}
-.pagination-item-curent a{
+
+
+
+.pagination-item-curent{
   color: #ffffff;
   background-color: #ee3643;
 }
-
-.next-page a{
+.pagination-item{
+  font-size: 13px;
+  line-height: 18px;
+  width: 38px;
+  height:38px;
+  text-align: center;
+  color: #000000;
+  border: solid 1px #e5e5e5;
+  border-radius: 2px;
+}
+.next-page{
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 700;
+  width: 140px;
+  height: 38px;
   color:#000000;
   background-color: #ffffff;
   border: solid 1px;
   border-color: #acaaa5;
   border-radius: 2px;
   text-transform: uppercase;
+  text-align: justify;
+}
+.next-page a,
+.pagination-item a {
+  color: #000000;
 }
 .pagination-item a:hover,
 .pagination-list a:focus,
 .next-page a:hover,
 .next-page a:focus{
   border-color: #bdc6ca;
+  color:#000000;
 }
 .pagination-item a:active,
 .pagination-item a:active,
@@ -648,8 +667,14 @@ font-size:13px;
 line-height: 24px;
 font-weight: 700;
 }
-article.information{
+aside.information{
   background-color: #f2f6f8;
+  min-height: 261px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-top: 70px;
 }
 .visually-hidden{display:none;}
 
@@ -782,6 +807,10 @@ padding: 0;
 .company-contact{
   width: 300px;
 }
+.main-footer{
+  width: 100%;
+  min-height: 300px;
+}
 .footer-top{
   display: flex;
   justify-content: space-between;
@@ -810,5 +839,112 @@ padding: 0;
   display:flex;
   justify-content:space-between;
   margin-left: 12px;
+  margin-top: 0;
 
+}
+.footer-bottom{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  min-height: 108px;
+  margin-bottom: 0;
+
+}
+.footer-copiright{
+  width: 230px;
+  margin: 0;
+  margin-left: 130px;
+  margin-top: 40px;
+
+}
+.social-networks{
+  display:flex;
+  width: 140px;
+  justify-content: space-between;
+
+}
+.footer-network{
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: 0;
+  margin-right: 130px;
+  padding-right: 10px;
+margin-left: 100px;
+}
+.breadcrumbs{
+  display: flex;
+  width: 360px;
+  min-height: 56px;
+  justify-content: space-between;
+  margin-left: 130px;
+}
+.filter-product{
+  display: flex;
+  flex: column;
+  width: 940px;
+  min-height: 1205px;
+  flex-wrap: wrap;
+  margin-left: 130px;
+}
+.filters{
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  min-height: 749px;
+  margin: 0 auto;
+
+}
+.sorting{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin-left: 20px;
+}
+.sorting-head{
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  height: 38px;
+  margin: 0 auto;
+  margin-top: 11px;
+
+
+}
+.sorting-item{
+  display: flex;
+  min-height: 32px;
+  width: 460px;
+  justify-content: space-between;
+  margin-left: 134px;
+
+
+}
+.product-item{
+  display: column;
+  width: 700px;
+  padding: 0;
+}
+.product-catalog-img{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  align-content: space-between;
+  min-height: 1000px;
+  padding-bottom: 55px;
+
+}
+.pagination-list{
+  display: flex;
+  width: 285px;
+  justify-content: space-between;
+  margin:0;
+  margin-bottom: 68px;
+}
+.filter-head{
+background-color: #f7f3ec;
+width: 220px;
+height: 38px;
+vertical-align: middle;
 }
