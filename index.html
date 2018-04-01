@@ -62,7 +62,6 @@
               <li class="main-navigation"><a href="contacs.html">Контакты</a></li>
         </ul>
         </nav>
-
       </header>
   <main class="container">
   <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
@@ -85,6 +84,7 @@
         <a href="catalog/equipment.html">Для стройки</a>
         <img class="icon-3" src="img/icon-3.svg" width="78" height="62" alt="">
       </div>
+      <div class="deleve-sales">
       <div class="service-item sales">
         <h3 class="turn">Скидки 50%</h3>
         <a href="sales.html">На 350 товаров</a>
@@ -95,31 +95,32 @@
           <a href="delivery.html">Бесплатно</a>
           <img class="icon-5" src="img/icon-5.svg" width="78" height="63" alt="">
       </div>
-            <div class="slide-catalog">
-
+    </div>
+    <div class="slader">
+      <button class="forward" type="button"><img src="img/icon-right.svg" width="22" height="40" alt="Следующий слайд"></button>
+      <button class="back" type="button"><img src="img/icon-left.svg" width="22" height="40" alt="Предыдущий слайд"></button>
+            <div class="slide1">
               <div class="title-slide">
                 <h3 class="slaider-name">Перфораторы</h3>
               <p class="slader-comment">Настоящие мужские игрушки</p>
             </div>
-              <img src="img/slider1.jpg" width="620" height="266" alt="Перфораторы">
-              <a href="catalog.html">Открыть каталог</a>
+              <img src="img/slider-1.jpg" width="620" height="266" alt="Перфораторы">
             </div>
-            <div class="slide-catalog slide2">
+            <div class="slide2">
               <div class="title-slide">
       <h3 class="slaider-name">Дрели</h3>
           <p class="slider-comment">Соседям на радость!</p>
         </div>
-        <a href="catalog.html">Открыть каталог</a>
-          <img src="img/slider2.jpg" width="620" height="266" alt="Дрели ">
-          <button type="button">&#10095;</button>
-          <button type="button">&#10094;</button>
+          <img src="img/slider-2.jpg" width="620" height="266" alt="Дрели ">
         </div>
+        <a class="open-catalog" href="catalog.html">Открыть каталог</a>
       </div>
+    </div>
         </section>
     <section class="popular-product">
       <header class="popular-item" >
       <h2 class="popular">Популярные товары:</h2>
-      <a href="catalog/popular-product.html">Все популярные товары</a>
+      <a class="popular-items" href="catalog/popular-product.html">Все популярные товары</a>
     </header>
         <ul class="product-item-img">
           <li class="item-price">
@@ -171,14 +172,14 @@
       <a class="all-brand" href="tehnomart-catalog.html">Все  производители</a>
     </header>
       <div class="brand-logo">
-        <div class="brand"><a  href="catalog.html"><img src="img/bosch.png" width="121" height="37" alt="Bosch"></a></div>
-      <div class="brand"><a  href="catalog.html"><img src="img/Makita.png" width="123" height="40" alt="Makita"></a></div>
-      <div class="brand"><a  href="catalog.html"><img src="img/DeWALT.png" width="146" height="44" alt="DeWalt"></a></div>
-      <div class="brand"><a  href="catalog.html"><img src="img/Interscol.png" width="184" height="32" alt="Interscol"></a></div>
-      <div class="brand"><a  href="catalog.html"><img src="img/Hitachi.png" width="169" height="31" alt="Hitachi"></a></div>
-      <div class="brand"><a  href="catalog.html"><img src="img/LG.png" width="121" height="73" alt="LG"></a></div>
-      <div class="brand"><a  href="catalog.html"><img src="img/AEG.png" width="151" height="96" alt="AEG"></a></div>
-      <div class="brand"><a  href="catalog.html"><img src="img/Metabo.png" width="204" height="69" alt="Metabo"></a></div>
+        <div class="brand"><a class="bosch"  href="catalog.html"><img src="img/bosch.png" width="121" height="37" alt="Bosch"></a></div>
+      <div class="brand"><a class="makita"  href="catalog.html"><img src="img/Makita.png" width="123" height="40" alt="Makita"></a></div>
+      <div class="brand"><a class="dewalt"  href="catalog.html"><img src="img/DeWALT.png" width="146" height="44" alt="DeWalt"></a></div>
+      <div class="brand"><a class="interscol"  href="catalog.html"><img src="img/Interscol.png" width="184" height="32" alt="Interscol"></a></div>
+      <div class="brand"><a class="hitachi"  href="catalog.html"><img src="img/Hitachi.png" width="169" height="31" alt="Hitachi"></a></div>
+      <div class="brand"><a class="lg"  href="catalog.html"><img src="img/LG.png" width="121" height="73" alt="LG"></a></div>
+      <div class="brand"><a class="aeg"  href="catalog.html"><img src="img/AEG.png" width="151" height="96" alt="AEG"></a></div>
+      <div class="brand"><a class="metabo" href="catalog.html"><img src="img/Metabo.png" width="204" height="69" alt="Metabo"></a></div>
         </div>
       </section>
       <section class="service">
@@ -189,7 +190,7 @@
         </header>
         <div class="service-discription">
         <div class="service-list">
-          <span class="button-service" tabindex="0">Доставка</span>
+          <span class="button-service deleve-btn" tabindex="0">Доставка</span>
           <div class="delivery-expos">
             <h3 class="list">Доставка</h3>
           <p class="expos">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
@@ -199,7 +200,7 @@
             <img src="img/delevery.png" width="468" height="261" alt="Доставка">
           </div>
             <div class="service-list">
-              <span class="button-service" tabindex="0">Гарантия</span>
+              <span class="button-service garant-btn" tabindex="0">Гарантия</span>
               <div class="garant-expos">
                 <h3 class="list">Гарантия</h3>
               <p class="expos">Гарантия  Если купленный у нас товар поломается или заискрит,
@@ -209,7 +210,7 @@
                 <img src="img/garant.png" width="389" height="283" alt="100% гарантия">
               </div>
               <div class="service-list">
-                 <span class="button-service" tabindex="0">Кредит</span>
+                 <span class="button-service credit-btn" tabindex="0">Кредит</span>
               <div class=" credit-expos">
                  <h3 class="list">Кредит</h3>
                 <p class="expos">Залезть в долговую яму стало проще.
@@ -271,6 +272,7 @@
         </div>
           <section class="footer-bottom">
              <h2 class="visually-hidden">Информационная панель</h2>
+<div class="footer-down">
             <div class="copiright">
 <p class="footer-copiright">&copy;2010-2017Компания &laquo;Техномарт&raquo;Все права защищены</p>
 </div>
@@ -291,28 +293,28 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
     </div>
     </div>
-
+</div>
   </section>
       </footer>
       <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
+        <div class="feedback-flex">
         <div class="dataname">
           <label for="user-field">Ваше имя</label><br>
-        <input type="text" name="user-name" placeholder="Представьтесь пожалуйста" id="user-field">
+        <input type="text" name="user-name" placeholder="Представьтесь, пожалуйста" id="user-field">
       </div>
       <div class="datamail">
         <label for="email-field">Ваш e-mail</label><br>
         <input type="text" name="user-email" placeholder="Для отправки ответа" id="email-field">
-        <label for="appeal-field">Текст письма</label>
-      </div>
+</div>
       <div class="mail">
-        <textarea name="appeal" id="appeal-field" rows="10">В свободной форме</textarea>
+        <label for="appeal-field">Текст письма</label><br>
+        <textarea name="appeal" placeholder="В свободной форме" id="appeal-field" ></textarea>
       </div>
+</div>
         <div class="btn-feedback">
         <input type="submit" value="отправить">
       </div>
-      <button class="model-close" type="button"><img src="img/form-2.svg" alt="Закрыть"></button>
-    </fieldset>
+        <button class="model-close" type="button"><img src="img/form-2.svg" alt="Закрыть"></button>
     </form>
   </body>
 </html>
